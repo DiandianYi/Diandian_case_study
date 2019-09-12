@@ -1,24 +1,8 @@
----
-title: "Prediction"
-author: "Maxine(Diandian) Yi"
-date: "September 12, 2019"
-output: html_document
----
+# Model prediction
+## Use decision tree algorithm with SMOTE
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-library(kableExtra)
-```
+Index | Class | Count
+--- | --- | ---
+test1 | 0 | 139142
+test2 | 1 | 3262
 
-## Model prediction
-### Use decision tree algorithm with SMOTE
-
-```{r prediction, echo=FALSE}
-text_tbl <- data.frame(
-  Class = c("0", "1"),
-  Count = c(139142,3262
-  )
-)
-
-kable(text_tbl) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
